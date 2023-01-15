@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "typescript": "^4.9.4"
+  }
+}
