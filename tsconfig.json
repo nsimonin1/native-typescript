@@ -1,13 +1,14 @@
 {
     "compilerOptions": {
-      "noImplicitAny": false,
-      "noEmitOnError": true,
-      "removeComments": false,
-      "sourceMap": true,
-      "target": "ES6",
-      "outDir": "dist"
-    },
-    "include": [
-      "scripts/**/*"
-    ]
-  }
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "ES6",
+        "target": "ES5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    }
+}
