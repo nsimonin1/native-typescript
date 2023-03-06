@@ -1,12 +1,15 @@
-import * as _ from 'lodash';
 
+const persons = [
+    {
+        "firstName":"Tom",
+        "lastName": "Evans",
+        "age": 31
+    },
+    {
+        "firstName":"James",
+        "lastName": "Bond",
+        "age": 19
+    }
+];
 
-function component() {
-    const element = document.createElement('div');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-    return element;
-  }
-
-  document.body.appendChild(component());
+const doc = document.getElementById('main');
