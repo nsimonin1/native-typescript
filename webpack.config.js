@@ -1,10 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
     mode: 'development',
     entry: './src/index.ts',
     devtool: 'inline-source-map',
+    watch: true,
     module: {
         rules: [
             {
@@ -26,6 +28,7 @@ module.exports = {
             output: __dirname + '/dist',
             inject: 'body'
         }),
+        new LiveReloadPlugin(),
     ],
     output: {
         filename: 'bundle.js',
